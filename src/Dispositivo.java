@@ -60,9 +60,9 @@ public class Dispositivo {
     }
 
     public void desactivar(){
-        if (activo == true) {
-            activo = false;
-        }
+
+        activo = false;
+
     }
 
     void mostrarEstado() {
