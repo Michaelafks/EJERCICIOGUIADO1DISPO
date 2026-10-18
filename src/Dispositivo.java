@@ -3,6 +3,13 @@ public class Dispositivo {
     private String nombre;
     private String tipo;
     private boolean activo;
+    private static int contador = 0;
+
+    public Dispositivo ( String nombre, String tipo) {
+        this.nombre = nombre;
+        this.tipo = tipo;
+        contador++;
+    }
 
     public void setNombre(String nombre) {
         if (nombre != null && !nombre.trim().isEmpty()) {
@@ -62,6 +69,11 @@ public class Dispositivo {
         System.out.println("Activo: " + activo);
 
     }
+
+    public static int getTotalCreados() {
+        return contador;
+    }
+
 
 
 }
